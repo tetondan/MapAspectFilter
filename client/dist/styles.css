@@ -9,10 +9,12 @@
   fill: white;
   stroke: black;
   stroke-width: 1;
+  cursor: pointer;
 }
 
-.dir {
+.directionLetter {
   font-size: 2em;
+  cursor: pointer;
 }
 
 .selected {
