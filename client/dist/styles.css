@@ -1,22 +1,58 @@
-.compass {
-  width: 25%;
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+}
+.tab {
+  width: 190px;
+  height: 3em;
+  background-color: rgb(244,244,244);
   position: relative;
   left: 40%;
-  top: 50px;
+}
+.tag {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  font-size: 1.5em;
+}
+.range {
+  float: right;
+  margin-top: 10%;
+  margin-right: 8%;
+  font-style: italic; 
+}
+.compass {
+  margin: 0;
+  width: 300px;
+  position: relative;
+  left: 40%;
+  top: 0px;
+  background-color: rgb(244,244,244);
 }
 
+.instructionFooter {
+  width: 200px;
+  position: relative;
+  left: 40%;
+  top: 0px;
+  background-color: rgb(244,244,244);
+}
 .piece {
   fill: white;
-  stroke: black;
+  stroke: #a5a5a5;
   stroke-width: 1;
   cursor: pointer;
 }
 
 .directionLetter {
-  font-size: 2em;
+  font-size: 2.5em;
   cursor: pointer;
+  fill: #a5a5a5;
 }
 
 .selected {
   fill: red;
+}
+
+polygon.selected {
+  stroke: black;
 }

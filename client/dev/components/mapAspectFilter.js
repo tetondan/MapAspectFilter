@@ -31,20 +31,21 @@ class MapAspectFilter extends Component {
   }
 
   componentWillMount(){
-    axios.get('/currentState')
-      .then( (response) => {
-        if(response.status === 200){
-          this.props.initializeServerState(response.data);
-        }
-      })
+    // axios.get('/currentState')
+      // .then( (response) => {
+      //   if(response.status === 200){
+      //     this.props.initializeServerState(response.data);
+      //   }
+      // })
   }
 
   componentWillUpdate(props){
-    axios.put('/updateState', props.filteredPoints);
+    // axios.put('/updateState', props.filteredPoints);
   }
+
   render(){
+    
     return(
-      <div className="compass">
         <svg viewBox="-50 -50 500 500">  
           {this.directionPieces.map( (obj, index) => {
             return (
@@ -70,7 +71,6 @@ class MapAspectFilter extends Component {
             )
           })}
         </svg>
-      </div>
     )
   }
 }
