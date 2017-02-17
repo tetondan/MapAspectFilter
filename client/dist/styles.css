@@ -1,0 +1,20 @@
+.compass {
+  width: 25%;
+  position: relative;
+  left: 40%;
+  top: 50px;
+}
+
+.piece {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.dir {
+  font-size: 2em;
+}
+
+.selected {
+  fill: red;
+}
