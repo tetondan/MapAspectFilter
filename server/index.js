@@ -24,7 +24,7 @@ app.put('/updateState', (req, res) => {
     stateObjectDB[key] = body[key]
   }
   //server will then send back updated state.
-  res.status(201).send(stateObject);
+  res.status(201);
 })
 
 
@@ -37,7 +37,7 @@ const stateObjectDB = {
   north: false,
   northEast: false,
   east: false,
-  southEast: false,
+  southEast: true,
   south: false,
   southWest: false,
   west: false,

@@ -17,6 +17,8 @@ const mapAspectFilterReducer = ( state = initialState, action) => {
       let newState = {}
       newState[direction] = toggledState
       return Object.assign({}, state, newState);
+    case "UPDATE_ALL":
+      return action.serverState;
     default:
       return state;
   }

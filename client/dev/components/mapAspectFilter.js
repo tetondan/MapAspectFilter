@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import AspectFilterPiece from './aspectFilterPiece'
 import AspectFilterLetter from './aspectFilterLetter'
+import axios from 'axios'
 
 class MapAspectFilter extends Component {
 
@@ -29,6 +30,18 @@ class MapAspectFilter extends Component {
     ]
   }
 
+  componentWillMount(){
+    axios.get('/currentState')
+      .then( (response) => {
+        if(response.status === 200){
+          this.props.initializeServerState(response.data);
+        }
+      })
+  }
+
+  componentWillUpdate(props){
+    axios.put('/updateState', props.filteredPoints);
+  }
   render(){
     return(
       <div className="compass">
@@ -72,6 +85,9 @@ const mapDispatchToProps = dispatch => {
   return{
     clickHandler: direction => {
       dispatch({type: "CHANGE_FILTER", direction});
+    },
+    initializeServerState: serverState => {
+      dispatch({type: "UPDATE_ALL", serverState})
     }
   };
 };
