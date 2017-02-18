@@ -11,8 +11,7 @@ const DirectionOutput = (props) => {
       south: 'S',
       southWest: 'SW',
       west: 'W',
-      northWest: 'NW',
-      'n': ''
+      northWest: 'NW'
     }
   let left = '';
   let leftIndex = dirs.length + 1
