@@ -58,7 +58,7 @@ Cons:
 
 ## Execution:
 
-I built the compass rose using an inline SVG. This gave me the ability to scale to any size nessesary while maintaining the proportions and resolution, it also allowed me to control each piece of the compass as I pleased, allowing me to set custom click handlers on each piece. This is a standalone component and can be plugged into any other component and scaled as necessary. 
+I built the compass rose using an inline SVG. This gave me the ability to scale to any size nessesary while maintaining the proportions and resolution. It also allowed me to control each piece of the compass as I pleased, allowing me to set custom click handlers and classes on each piece. This is a standalone component and can be plugged into any other component and scaled as necessary. 
 
 The App is built on a mock drop down menu with the Compass component rendered inside of it, it also utilizes a seperate component to display the current selections. 
 
