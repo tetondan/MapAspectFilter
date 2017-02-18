@@ -30,11 +30,19 @@ body {
 }
 
 .instructionFooter {
-  width: 200px;
+  width: 300px;
   position: relative;
   left: 40%;
   top: 0px;
   background-color: rgb(244,244,244);
+}
+
+.instructions {
+  display: block;
+  font-size: .8em;
+  text-align: center;
+  color: #a5a5a5;
+  font-style: italic;
 }
 .piece {
   fill: white;

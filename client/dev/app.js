@@ -19,7 +19,7 @@ export default class App extends Component {
           <MapAspectFilter />
         </div>
         <div className="instructionFooter">
-
+          <span className="instructions">Click on the compass or direction to select</span>
         </div>
       </div>
     )
