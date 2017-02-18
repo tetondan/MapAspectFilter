@@ -31,16 +31,16 @@ class MapAspectFilter extends Component {
   }
 
   componentWillMount(){
-    // axios.get('/currentState')
-      // .then( (response) => {
-      //   if(response.status === 200){
-      //     this.props.initializeServerState(response.data);
-      //   }
-      // })
+    axios.get('/currentState')
+      .then( (response) => {
+        if(response.status === 200){
+          this.props.initializeServerState(response.data);
+        }
+      })
   }
 
   componentWillUpdate(props){
-    // axios.put('/updateState', props.filteredPoints);
+    axios.put('/updateState', props.filteredPoints);
   }
 
   render(){

@@ -37,7 +37,7 @@ const stateObjectDB = {
   north: false,
   northEast: false,
   east: false,
-  southEast: true,
+  southEast: false,
   south: false,
   southWest: false,
   west: false,
