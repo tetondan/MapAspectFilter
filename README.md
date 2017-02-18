@@ -77,3 +77,6 @@ Webpack and Babel are doing all of the Transpiling on the front end, and the JS 
     - "npm start"
   - Direct your browser to http://localhost:3000
   
+  - To run tests:
+    - "npm test"
+  
