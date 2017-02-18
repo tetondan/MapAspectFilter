@@ -73,6 +73,7 @@ Webpack and Babel are doing all of the Transpiling on the front end, and the JS 
     - "npm install -g webpack"
   - clone repository
   - From the root file of the repository
+    - "npm install"
     - "npm run build"
     - "npm start"
   - Direct your browser to http://localhost:3000
