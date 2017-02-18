@@ -66,7 +66,11 @@ I built a Node.js backend to serve the static files, and also built a small API 
 
 Webpack and Babel are doing all of the Transpiling on the front end, and the JS is being served as a single static file.
 
+## Requirements:
 
+  - Node.js ^4.2.2
+  
+  
 ## Instructions:
 
   - If you do not have Webpack 2.0 installed globally on your machine:
